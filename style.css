@@ -102,8 +102,10 @@ body{
 
 /*  about */
 .about{
-    margin-left: 1.5%;
+    margin-left: -15%;
     padding-top: 7%;
+    padding-left: 50px;
+    padding-right: 80px;
     text-align: center;
     font-size: 100%;
     font-weight: 700;
@@ -132,13 +134,14 @@ body{
 .card{
     margin-top: -12%;
     font-size: 30px;
+    margin-left: 10%;
 }
-.projects .row .col-md-6 .card{
+.projects .row .col-md-3 .card{
     position: absolute;
     transform: scale(0.5);
     transition: transform 0.5s ease;
 }
-.projects .row .col-md-6 .card:hover{
+.projects .row .col-md-3 .card:hover{
     transform: scale(0.60);
     cursor: zoom-in;
     background-color: rgba(192,192,192,0.5);
