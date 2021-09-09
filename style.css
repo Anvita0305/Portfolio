@@ -48,7 +48,6 @@ body{
     transform-origin: 70% 70%;
 }
 @keyframes hello {
-    
     30%{
         transform: rotate(-8deg);
     }
@@ -67,14 +66,13 @@ body{
     55%{
         transform: rotate(-9deg);
     }
-    
-    
 }
+
 .heading h1{
     font-weight: 700;
     word-spacing: 5px;
     letter-spacing: 2px;
-    animation: type 0.8s steps(18);
+    animation: type 1.4s steps(18);
     overflow: hidden;
     white-space: nowrap;
     font-family: 'Dancing Script', cursive;
