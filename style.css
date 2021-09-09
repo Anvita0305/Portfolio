@@ -1,148 +1,146 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script:wght@400;500&display=swap');
-body{
-    margin: 0;
-    font-family: 'IBM Plex Sans Arabic', sans-serif;
-    box-sizing: border-box;
-    overflow-x: hidden;
-}
-.navbar{
-    color: #ffffff;
-    text-transform: uppercase;
-    font-size: 15px;
-    font-weight: 500;
-    word-spacing: 30%;
-    letter-spacing: 3px;
-    background: rgba(0,0,0,0.6) !important;
-    padding: 70%;
-
-}
-.navbar  .navbar-nav .nav-item .nav-link {
-    color: white;
-    padding-left: 10px;
-}
-.navbar   .navbar-nav .nav-item .nav-link.active,
-.navbar  .navbar-nav .nav-item .nav-link:hover{
-    color: teal;
-}
-/* for heading change font color and font depending of the background */
-.heading{
-    padding-top: 15%;
-    padding-left: 5%;
-    text-align:start;
+    body{
+        margin: 0;
+        font-family: 'IBM Plex Sans Arabic', sans-serif;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+    .navbar{
+        color: #ffffff;
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: 500;
+        word-spacing: 30%;
+        letter-spacing: 3px;
+        background: rgba(0,0,0,0.6) !important;
+        padding: 70%;
     
-}
-.heading h4{
-    padding-bottom: 0%;
-    padding-top: 40;
-    font-weight: 700;
-    word-spacing: 5px;
-    letter-spacing: 2px;
+    }
+    .navbar  .navbar-nav .nav-item .nav-link {
+        color: white;
+        padding-left: 10px;
+    }
+    .navbar   .navbar-nav .nav-item .nav-link.active,
+    .navbar  .navbar-nav .nav-item .nav-link:hover{
+        color: teal;
+    }
+    /* for heading change font color and font depending of the background */
+    .heading{
+        padding-top: 15%;
+        padding-left: 5%;
+        text-align:start;
+        
+    }
+    .heading h4{
+        padding-bottom: 0%;
+        padding-top: 40;
+        font-weight: 700;
+        word-spacing: 5px;
+        letter-spacing: 2px;
+        
+    }
+    /* emoji */
+    .emoji{
+        font-size: 50px;
+        padding-left: 35%;
+        animation: hello 3.5s infinite;
+        transform-origin: 70% 70%;
+    }
+    @keyframes hello {
+        30%{
+            transform: rotate(-8deg);
+        }
+        35%{
+            transform: rotate(-10deg);
+        }
+        40%{
+            transform: rotate(-9deg);
+        }
+        45%{
+            transform: rotate(-10deg);
+        }
+        50%{
+            transform: rotate(-8deg);
+        }
+        55%{
+            transform: rotate(-9deg);
+        }
+    }
     
-}
-/* emoji */
-.emoji{
-    font-size: 50px;
-    padding-left: 35%;
-    animation: hello 3.5s infinite;
-    transform-origin: 70% 70%;
-}
-@keyframes hello {
-    30%{
-        transform: rotate(-8deg);
+    .heading h1{
+        font-weight: 700;
+        word-spacing: 5px;
+        letter-spacing: 2px;
+        animation: type 1.4s steps(18);
+        overflow: hidden;
+        white-space: nowrap;
+        font-family: 'Dancing Script', cursive;
+        font-size: 60px;
     }
-    35%{
-        transform: rotate(-10deg);
+    @keyframes type{
+    0%{
+        width:0ch;
     }
-    40%{
-        transform: rotate(-9deg);
+    100%{
+        width:18ch;
     }
-    45%{
-        transform: rotate(-10deg);
     }
-    50%{
-        transform: rotate(-8deg);
+    /* social media */
+    .social{
+        padding-left: 10%;
+        padding-right: 10%;
+        font-size: 40px;
+        letter-spacing: 15px;
+        background: black;
+        margin-left: 3%;
     }
-    55%{
-        transform: rotate(-9deg);
+    /* Effects to social---to be added */
+    .social a:hover{
+        transform: translate(0,-10px);
     }
-}
+    
+    /*  about */
+    .row {
+        margin-left: 17%;
+        margin-right: 17%;
+        text-align: center;
+        font-size: 100%;
+        font-weight: 700;
+    }
+    /* Skills box */
+    .row .card .card-body {
+        position: absolute;
+        transform: scale(0.6);
+        transition: transform 0.5s ease;
+    }
+  
+        
+     
+    .row .card .card-body:hover{
+            transform: scale(0.80);
+            cursor: zoom-in;
+            background-color: rgba(192,192,192,0.5);
+        }
+    
 
-.heading h1{
-    font-weight: 700;
-    word-spacing: 5px;
-    letter-spacing: 2px;
-    animation: type 1.4s steps(18);
-    overflow: hidden;
-    white-space: nowrap;
-    font-family: 'Dancing Script', cursive;
-    font-size: 60px;
-}
-@keyframes type{
-0%{
-    width:0ch;
-}
-100%{
-    width:18ch;
-}
-}
-/* social media */
-.social{
-    padding-left: 10%;
-    padding-right: 10%;
-    font-size: 40px;
-    letter-spacing: 15px;
-    background: black;
-    margin-left: 3%;
-}
-/* Effects to social---to be added */
-.social a:hover{
-    transform: translate(0,-10px);
-}
-
-/*  about */
-.about{
-    margin-left: -15%;
-    padding-top: 7%;
-    padding-left: 50px;
-    padding-right: 80px;
-    text-align: center;
-    font-size: 100%;
-    font-weight: 700;
-}
-/* Skills box */
-.row .col-md-4 .card{
-    position: absolute;
-    transform: scale(0.6);
-    transition: transform 0.5s ease;
-}
-.row .col-md-4 .card:hover{
-    transform: scale(0.80);
-    cursor: zoom-in;
-    background-color: rgba(192,192,192,0.5);
-}
-
-
-/* projects heading */
-.projects-heading{
-    font-family: 'Dancing Script', cursive; 
-    font-size: 60px; 
-    font-weight: 700;
-    text-align: center;
-}
-/* Cards */
-.card{
-    margin-top: -12%;
-    font-size: 30px;
-    margin-left: 10%;
-}
-.projects .row .col-md-3 .card{
-    position: absolute;
-    transform: scale(0.5);
-    transition: transform 0.5s ease;
-}
-.projects .row .col-md-3 .card:hover{
-    transform: scale(0.60);
-    cursor: zoom-in;
-    background-color: rgba(192,192,192,0.5);
-}
+       
+    /* projects heading */
+    .projects-heading{
+        font-family: 'Dancing Script', cursive; 
+        font-size: 60px; 
+        font-weight: 700;
+        text-align: center;
+    }
+    /* Cards */
+    
+    .cards .card .row .col-md-12 .card-body{
+        transform: scale(0.5);
+        transition: transform 0.5s ease;
+    }
+    .cards .card .row  .col-md-12 .card-body:hover{
+        transform: scale(0.80);
+        cursor: zoom-in;
+        background-color: rgba(192,192,192,0.5);
+    }
+ 
