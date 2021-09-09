@@ -1,5 +1,15 @@
 # Portfolio
 <h2>Website Link of my Portfolio</h2>
+//to be attached
+
+<h2>Technologies used</h2>
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>Bootstrap</li>
+</ul>
+
+<h2>Website Preview</h2>
 
 ![Screenshot (198)](https://user-images.githubusercontent.com/78889572/132629677-0da0abea-6d44-4dbe-9443-da11792f8b17.png)
 ![Screenshot (199)](https://user-images.githubusercontent.com/78889572/132629721-f378ed98-f5b8-4564-9fcd-554fc05509f4.png)
