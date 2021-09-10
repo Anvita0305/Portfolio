@@ -13,7 +13,8 @@ https://anvita0305.github.io/Portfolio.github.io/
 
 
 ![Screenshot (204)](https://user-images.githubusercontent.com/78889572/132858700-2da1e0b1-5ffc-4845-a5bd-9b85240e7464.png)<br>
-![Screenshot (203)](https://user-images.githubusercontent.com/78889572/132858714-c5429be1-661f-4abf-81ef-9dfca2db978b.png)<br>
+![Screenshot (206)](https://user-images.githubusercontent.com/78889572/132863664-e9e66d60-8946-4f02-b30c-b6f047c7ae2e.png)
+<br>
 ![Screenshot (205)](https://user-images.githubusercontent.com/78889572/132858721-eaaf781a-0879-4d50-988e-f583712dcaaa.png)
 
 
