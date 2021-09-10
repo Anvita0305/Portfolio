@@ -149,6 +149,22 @@
     .social a:hover{
         transform: translate(0,-10px);
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
     /*  about */
      .about .row {
@@ -286,7 +302,6 @@
 
 
 
-    /* Skills box */
 
 
        
@@ -300,7 +315,7 @@
     /* Cards */
     
     .container{
-        width: 2000px;
+        width: 1000px;
         position: relative;
         display: flex;
         justify-content: space-between;
@@ -333,7 +348,8 @@
     }
     .container .card .face.face2{
         margin-left: -30%;
-        position: relative;
+        margin-bottom: 30%;
+        position:absolute;
         background: rgb(115, 182, 221,0.5);
         display: flex;
         justify-content: center;
@@ -409,14 +425,3 @@
 
 
 
-
-    /* .cards .card .row .col-md-12 .card-body{
-        transform: scale(0.5);
-        transition: transform 0.5s ease;
-    }
-    .cards .card .row  .col-md-12 .card-body:hover{
-        transform: scale(0.80);
-        cursor: zoom-in;
-        background-color: rgba(192,192,192,0.5);
-    }
-  */
