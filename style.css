@@ -211,7 +211,7 @@
         position: absolute;
         width: 100%;
         height: 100%;
-        background: rgb(235, 240, 243,0.5);
+        background: rgba(12, 147, 224, 0.5);
         opacity: 0.3;
         z-index: 2;
         transition: opacity 0.25s;
@@ -225,7 +225,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        background: #fff;
+        background: rgb(55, 65, 202);
         height: 60%;
         width: 100%;
         text-align: center;
@@ -246,7 +246,7 @@
       .text p {
         line-height: 20px;
         margin: 0 10px;
-        color: rgb(150, 192, 240);
+        color: rgb(104, 167, 240);
         z-index: 5;
         transition: opacity 0.25s;
       }
@@ -292,16 +292,17 @@
     
     .container{
         width: 1000px;
-        position: relative;
+        position:relative;
         display: flex;
         justify-content: space-between;
-        margin: 15px auto;
+        flex-direction: row;
+        flex-wrap: wrap;
         
     }
     .container .card{
         position: relative;
         cursor: pointer;
-        background-color: rgb(148, 190, 196);
+        background-color: rgb(105, 158, 236);
     }
     .container .card .face{
         padding-left: 30%;
