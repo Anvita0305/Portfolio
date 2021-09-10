@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script:wght@400;500&display=swap');
     body{
         margin: 0;
+        padding:0;
         font-family: 'IBM Plex Sans Arabic', sans-serif;
         box-sizing: border-box;
         overflow-x: hidden;
@@ -92,7 +93,7 @@
     /* emoji */
     .emoji{
         font-size: 50px;
-        padding-left: 35%;
+        padding-left: 25%;
         animation: hello 3.5s infinite;
         transform-origin: 70% 70%;
     }
@@ -118,7 +119,7 @@
     }
     
     .heading h1{
-        font-weight: 700;
+        font-weight: 900;
         word-spacing: 5px;
         letter-spacing: 2px;
         animation: type 1.4s steps(18);
@@ -139,8 +140,8 @@
     .social{
         padding-left: 10%;
         padding-right: 10%;
-        font-size: 40px;
-        letter-spacing: 15px;
+        font-size: 2.5rem;
+        letter-spacing: 0.5rem;
         background: black;
         margin-left: 3%;
     }
@@ -150,7 +151,7 @@
     }
     
     /*  about */
-    .about .row {
+     .about .row {
         margin-left: 10%;
         margin-right: 7%;
         margin-top: 4px;
@@ -158,47 +159,135 @@
         font-weight: 700;
     }
 
+
+
+
+    .wrapper {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+      }
+      
+      .card {
+        width: 200px;
+        height: 350px;
+        margin: auto;
+        margin-top: -3%;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+      }
+      .card:hover .fon {
+        opacity: 0;
+      }
+      .card:hover .text {
+        height: 10%;
+        padding: 10px 0 0;
+      }
+      .card:hover .text h2 {
+        margin-bottom: 0;
+      }
+      .card:hover .text p {
+        opacity: 0;
+      }
+      
+      .fon {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgb(82, 190, 240);
+        opacity: 0.3;
+        z-index: 2;
+        transition: opacity 0.25s;
+      }
+      
+      .text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background: #fff;
+        height: 60%;
+        width: 100%;
+        text-align: center;
+        padding: 40px 0 0;
+        z-index: 4;
+        transition: height 0.25s, padding 0.25s;
+      }
+      .text h2 {
+        text-transform: uppercase;
+        color: #3498DB;
+        font-family: 'Dancing Script', cursive;
+        font-size: 1.5rem;
+        font-weight: 900;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+        transition: margin-bottom 0.25s;
+      }
+      .text p {
+        line-height: 20px;
+        margin: 0 10px;
+        color: rgb(150, 192, 240);
+        z-index: 5;
+        transition: opacity 0.25s;
+      }
+      .text .triangle {
+        width: 100%;
+        height: 50px;
+        background: #fff;
+        z-index: 9;
+        transform: matrix(1.01, -0.3, 0, 2, -1, 10);
+        z-index: 3;
+      }
+      
+      .btn {
+        position: absolute;
+        top: calc(50% - 20px);
+        left: calc(50% - 40px);
+        margin: auto;
+        width: 80px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        border: 2px solid #fff;
+        color: #fff;
+        transition: transform 0.15s; background:0.25s; color:0.25s;border-color :0.25s;
+        z-index: 4;
+        transform: scale(0);
+        cursor: pointer;
+      }
+      .btn:hover {
+        background: #3498DB;
+        border-color: #3498DB;
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     /* Skills box */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /* .about .row .col-md-4 .card .card-body{
-        position: absolute;
-        transform: scale(0.6);
-        transition: transform 0.5s ease;
-    }
-  
-        
-     
-    .about .row .col-md-4 .card .card-body:hover{
-            transform: scale(0.80);
-            cursor: zoom-in;
-            background-color: rgba(192,192,192,0.5);
-        } */
-    
 
        
     /* projects heading */
@@ -216,10 +305,12 @@
         display: flex;
         justify-content: space-between;
         margin: 15px auto;
+        
     }
     .container .card{
         position: relative;
         cursor: pointer;
+        background-color: rgb(148, 190, 196);
     }
     .container .card .face{
         padding-left: 30%;
@@ -241,9 +332,9 @@
         transform: translateY(0);
     }
     .container .card .face.face2{
-        padding-left: 50%;
+        margin-left: -30%;
         position: relative;
-        background: #fff;
+        background: rgb(115, 182, 221,0.5);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -267,11 +358,12 @@
      
     .container .card:hover .face.face1 .content{
         opacity: 1;
-        background-color: black;
+        
     }
      
     .container .card .face.face1 .content img{
-        max-width: 400px;
+        max-width: 350px;
+        margin-left: 17%;;
     }
      
     .container .card .face.face1 .content h3{
