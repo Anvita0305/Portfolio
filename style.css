@@ -101,15 +101,16 @@
     }
     
     /*  about */
-    .row {
+    .about {
         margin-left: 17%;
         margin-right: 17%;
+       margin-top: 3px;
         text-align: center;
         font-size: 100%;
         font-weight: 700;
     }
     /* Skills box */
-    .row .card .card-body {
+    .about .row .col-md-4 .card-body{
         position: absolute;
         transform: scale(0.6);
         transition: transform 0.5s ease;
@@ -117,7 +118,7 @@
   
         
      
-    .row .card .card-body:hover{
+    .about .row .col-md-4 .card-body:hover{
             transform: scale(0.80);
             cursor: zoom-in;
             background-color: rgba(192,192,192,0.5);
