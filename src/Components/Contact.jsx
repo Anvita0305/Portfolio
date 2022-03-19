@@ -4,38 +4,38 @@ import AccountCircle from "@mui/icons-material/AccountCircle";
 import PhoneIcon from "@material-ui/icons/Phone";
 import MailIcon from "@material-ui/icons/Mail";
 import TextareaAutosize from "@mui/material/TextareaAutosize";
-import BottomNavigationAction from "@mui/material/BottomNavigationAction";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import FacebookIcon from "@material-ui/icons/Facebook";
-import TwitterIcon from "@material-ui/icons/Twitter";
+import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import Footer from "./Footer";
 import db from "../firebaseContact";
 
 export default function InputWithIcon() {
-  const[name,setName]=useState("");
-  const[num,setNum]=useState("");
-  const[mail,setMail]=useState("");
-  const[query,setQuery]=useState("");
+  const [name, setName] = useState("");
+  const [num, setNum] = useState("");
+  const [mail, setMail] = useState("");
+  const [query, setQuery] = useState("");
 
-  function handleSubmit(e){
+  function handleSubmit(e) {
     e.preventDefault();
-    db.collection('contacts').add({
-      name:name,
-      num:num,
-      mail:mail,
-      query:query,
-    })
-    .then(()=>{
-      alert("Form Submitted Successfully!")
-    })
-    .catch((error)=>{
-      alert(error.message);
-    })
-    setName('')
-    setNum('')
-    setMail('')
-    setQuery('')
+    db.collection("contacts")
+      .add({
+        name: name,
+        num: num,
+        mail: mail,
+        query: query,
+      })
+      .then(() => {
+        alert("Form Submitted Successfully!");
+      })
+      .catch((error) => {
+        alert(error.message);
+      });
+    setName("");
+    setNum("");
+    setMail("");
+    setQuery("");
   }
   return (
     <>
@@ -50,8 +50,8 @@ export default function InputWithIcon() {
             name="name"
             required
             value={name}
-            onChange={(e)=>{
-              setName(e.target.value)
+            onChange={(e) => {
+              setName(e.target.value);
             }}
           />
           <br />
@@ -65,8 +65,8 @@ export default function InputWithIcon() {
             autoComplete="off"
             required
             value={num}
-            onChange={(e)=>{
-              setNum(e.target.value)
+            onChange={(e) => {
+              setNum(e.target.value);
             }}
           />
           <br />
@@ -80,9 +80,9 @@ export default function InputWithIcon() {
               autoComplete="off"
               required
               value={mail}
-              onChange={(e)=>{
-              setMail(e.target.value)
-            }}
+              onChange={(e) => {
+                setMail(e.target.value);
+              }}
             />
           </span>
           <br />
@@ -96,12 +96,12 @@ export default function InputWithIcon() {
             autoComplete="off"
             required
             value={query}
-            onChange={(e)=>{
-              setQuery(e.target.value)
+            onChange={(e) => {
+              setQuery(e.target.value);
             }}
           />
           <br></br>
-          <button type="button" class="btn btn-dark"  onClick={handleSubmit}>
+          <button type="button" class="btn btn-dark" onClick={handleSubmit}>
             Submit
           </button>
         </form>
@@ -113,20 +113,43 @@ export default function InputWithIcon() {
         <footer class="footer">
           <div>
             <h4>Connect with Me:</h4>
+            <br></br>
             <div>
-              <BottomNavigationAction
-                label="Instagram"
-                icon={<InstagramIcon />}
-              />
-              <BottomNavigationAction
-                label="Facebook"
-                icon={<FacebookIcon />}
-              />
-              <BottomNavigationAction label="Twiter" icon={<TwitterIcon />} />
-              <BottomNavigationAction
-                label="LinkedIn"
-                icon={<LinkedInIcon />}
-              />
+              <span className="adjust">
+                {
+                  <InstagramIcon
+                    className="insta"
+                    style={{ height: "3rem", width: "3rem" }}
+                  />
+                }
+              </span>
+
+              <span className="adjust">
+                {
+                  <FacebookIcon
+                    className="facebook"
+                    style={{ height: "3rem", width: "3rem" }}
+                  />
+                }
+              </span>
+
+              <span className="adjust">
+                {
+                  <GitHubIcon
+                    className="git"
+                    style={{ height: "3rem", width: "3rem" }}
+                  />
+                }
+              </span>
+
+              <span className="adjust">
+                {
+                  <LinkedInIcon
+                    className="linkedIn"
+                    style={{ height: "3rem", width: "3rem" }}
+                  />
+                }
+              </span>
             </div>
           </div>
         </footer>

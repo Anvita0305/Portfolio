@@ -8,6 +8,7 @@ import About from "./About";
 import MoreInfo from "./AboutMeMore";
 import Projects from "./Projects";
 import Contact from "./Contact";
+import WebDev from "./WebDevProjects";
 import {Route, Routes} from "react-router-dom";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path="/about" element={<About/>}/>
           <Route path="/about/moreInfo" element={<MoreInfo/>}/>
           <Route path="/projects" element={<Projects/>}/>
+          <Route path="/projects/web-dev" element={<WebDev/>}/>
           <Route path="/contact" element={<Contact/>}/>
         </>
       </Routes>

@@ -8,7 +8,7 @@ body {
 .navbar-brand h1{
   font-weight: 500;
   letter-spacing: 2.5px;
-  color: antiquewhite;
+  color: antiquewhite; 
 }
 .nav-link{
   font-size: 1.25rem;
@@ -137,6 +137,32 @@ h1 span {
 }
 
 /* projects card page */
+.button_slide {
+  color: black;
+  border: 2px solid rgb(5, 5, 5);
+  border-radius: 0px;
+  padding: 18px 36px;
+  display: inline-block;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 20px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #cfcdce;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+
+.slide_diagonal:hover {
+  box-shadow: inset 400px 50px 0 0 #727272;
+}
+
+.outer {
+  width: 364px;
+  margin: 50px auto 0 auto;
+  text-align: center;
+}
+
 .allCards {
   display: flex;
   flex-direction: column;
@@ -329,6 +355,8 @@ h1 span {
     margin-top: 1rem;
   }
   /* project */
+  
+
   .allCards {
     display: flex;
     flex-direction: column;
@@ -351,4 +379,23 @@ h1 span {
     width: 0rem;
     height: 0rem;
   }
+}
+/* contact */
+.insta{
+  background:linear-gradient(45deg, #405DE6,#5851DB,#833AB4,#c13584,#FD1D1D);
+  border: 2px solid linear-gradient(45deg, #405DE6,#5851DB,#833AB4,#c13584,#FD1D1D);
+  border-radius: 1rem;
+}
+.linkedIn{
+  background-color:  #006192;
+  border: 2px solid #006192;
+  border-radius: 1rem;
+}
+.facebook{
+  background-color:  #3b5998;
+  border: 2px solid #3b5998;
+  border-radius: 1rem;
+}
+.adjust{
+  padding-right: 3rem;
 }
