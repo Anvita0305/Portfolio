@@ -1,21 +1,94 @@
-#My Portfolio
-<h2>Website Link of my Portfolio</h2><hr>
-https://anvita0305.github.io/Portfolio.github.io/
-<hr>
-<h2>Technologies used</h2><hr>
-<ul>
-  <li>HTML</li>
-  <li>CSS</li>
-  <li>Bootstrap</li>
-</ul>
-<hr>
-<h2>Website Preview</h2>
 
-![Screenshot (211)](https://user-images.githubusercontent.com/78889572/132882179-e29c42b6-3753-4039-b951-18a3cf0fe1c4.png)
+# Portfolio Website
 
-<br><br>
-![Screenshot (210)](https://user-images.githubusercontent.com/78889572/132881293-5a8a29d5-07c6-40ad-b2a7-56efd928dcd2.png)<br><br>
-![Screenshot (209)](https://user-images.githubusercontent.com/78889572/132881326-7ac960d0-a056-44d2-b760-06873b7a9022.png)<br><br>
-![Screenshot (213)](https://user-images.githubusercontent.com/78889572/132882227-3f74da10-4280-4d2a-bf2e-f9c112d0bcff.png)
+This is a Portfolio Website built using ReactJs and deployed using Firebase.
+
+
+Website Link:https://portfoliowebsite-5f105.web.app/
+
+
+
+
+
+## Tech Stack
+
+* HTML
+* CSS
+* React
+* Firebase
+
+
+
+
+
+## Deployment
+
+To deploy this project run
+
+```bash
+  npm run deploy
+```
+
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/Anvita0305/Portfolio.github.io
+```
+
+Go to the project directory
+
+```bash
+  cd my-project
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run start
+```
+
+
+
+## Screenshots
+
+#Home Page
+<br>
+![Screenshot (186)](https://user-images.githubusercontent.com/78889572/159111189-5e8cfff3-138c-4efa-909d-2882ae6a9252.png)
+<br>
+
+#About Page
+<br>
+![Screenshot (187)](https://user-images.githubusercontent.com/78889572/159111205-12d85293-68b7-438f-898b-ad34f8f0ccf8.png)
+<br>
+
+#Projects Page
+<br>![Screenshot (188)](https://user-images.githubusercontent.com/78889572/159111218-b5fbbda8-7e5b-4eda-83c7-52da74dbc759.png)
+<br>
+
+#Contact Page
+<br>
+![Screenshot (189)](https://user-images.githubusercontent.com/78889572/159111232-589d0554-2901-4c21-9746-7eb14484d01a.png)
+<br>
+
+#Responsiveness:
+<br>![Screenshot (190)](https://user-images.githubusercontent.com/78889572/159111254-35a2d0dc-e654-4f17-b832-dee2835a73e3.png)
+<br>
+![Screenshot (191)](https://user-images.githubusercontent.com/78889572/159111255-593278b1-72bf-48f2-be0a-0908f111b020.png)
+<br>
+<br>
+
+## Feedback
+
+If you have any feedback, please reach out to me at mahajananvita3@gmail.com
+
 
 
