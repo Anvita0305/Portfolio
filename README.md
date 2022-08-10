@@ -12,9 +12,9 @@ Website Link:https://portfoliowebsite-5f105.web.app/
 
 ## Tech Stack
 
-* HTML
-* CSS
-* React
+* ReactJS
+* Bootstrap
+* Material UI
 * Firebase
 
 
