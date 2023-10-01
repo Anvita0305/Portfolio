@@ -10,12 +10,14 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import Footer from "./Footer";
 import db from "../firebaseContact";
+import { Navigate, useNavigate } from "react-router-dom";
 
 export default function InputWithIcon() {
   const [name, setName] = useState("");
   const [num, setNum] = useState("");
   const [mail, setMail] = useState("");
   const [query, setQuery] = useState("");
+  let navigate=useNavigate();
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -115,29 +117,30 @@ export default function InputWithIcon() {
             <h4>Connect with Me:</h4>
             <br></br>
             <div>
-              <span className="adjust">
+              {/* <span className="adjust">
                 {
                   <InstagramIcon
                     className="insta"
                     style={{ height: "3rem", width: "3rem" }}
                   />
                 }
-              </span>
+              </span> */}
 
-              <span className="adjust">
+              {/* <span className="adjust">
                 {
                   <FacebookIcon
                     className="facebook"
                     style={{ height: "3rem", width: "3rem" }}
                   />
                 }
-              </span>
+              </span> */}
 
               <span className="adjust">
                 {
                   <GitHubIcon
                     className="git"
                     style={{ height: "3rem", width: "3rem" }}
+                    onClick={()=>{window.location.replace("https://github.com/Anvita0305/")}}
                   />
                 }
               </span>
@@ -147,6 +150,7 @@ export default function InputWithIcon() {
                   <LinkedInIcon
                     className="linkedIn"
                     style={{ height: "3rem", width: "3rem" }}
+                    onClick={()=>{window.location.replace("https://www.linkedin.com/in/anvita-mahajan-232814200/")}}
                   />
                 }
               </span>

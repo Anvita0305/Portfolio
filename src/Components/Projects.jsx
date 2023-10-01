@@ -23,27 +23,14 @@ function Projects() {
   const display = () => setShowText(true);
   return (
     <>
-      <div className="outer">
-        {/* <Link to="/projects/web-dev"> */}
-          <div className="button_slide slide_diagonal" onClick={display}>
-            WEB DEVELOPMENT PROJECTS
-          </div>
-        {/* </Link> */}
-      </div>
-      <br />
-      {showText ?
+     
         <div>
-        <h2 className="cardHeading">Web-Development Projects:-</h2>
+        {/* <h2 className="cardHeading">Web-Development Projects:-</h2> */}
         <hr></hr>
         <div className="allCards">{Data.map(projectCards)}</div>
         <br />
       </div>
-      :null
-      }
-      {showText ?
-        <Footer/>
-      :null
-      }
+   
       
     </>
   );

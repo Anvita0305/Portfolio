@@ -7,19 +7,20 @@ function Cards(props) {
     <>
       <div className="allCards">
         <div className="mainCard" data-aos="flip-up">
-          <div className="col-6">
-            <img src={props.imgsrc} className="projImg" alt="projects image" />
-          </div>
-          <div className="col-6">
+
+          <div className="col-12">
             <div>
-              <h2>{props.title}</h2>
+              <h3 style={{textAlign:"center",padding:"1rem"}}>{props.title}</h3>
+              <hr></hr>
               <br></br>
-              <h3>About:</h3>
+              <h5>About:</h5>
               <p>{props.about}</p>
+              {/* <br></br> */}
+              <hr></hr>
               <br></br>
-              <h5>
+              <h5 style={{textAlign:"center"}}>
                 <Button href={props.link} variant="outlined">
-                  GitHub Link
+                  GitHub/ Gitlab Link
                 </Button>
               </h5>
             </div>
