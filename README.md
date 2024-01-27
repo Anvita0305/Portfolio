@@ -26,11 +26,15 @@ Website Link:https://portfoliowebsite-5f105.web.app/
 <br>
 
 ## About Page
-<br>![Screenshot (187)](https://user-images.githubusercontent.com/78889572/159111205-12d85293-68b7-438f-898b-ad34f8f0ccf8.png)
+<br>![Screenshot 2024-01-27 104426](https://github.com/Anvita0305/Portfolio/assets/78889572/ba0670a8-c24d-48db-960e-ee8712f372be)
+<br>
+
+## Skills Project
+<br>![Screenshot 2024-01-27 104438](https://github.com/Anvita0305/Portfolio/assets/78889572/212734b0-0b1f-41b7-be49-7be86c0d4e68)
 <br>
 
 ## Projects Page
-<br>![Screenshot (530)](https://user-images.githubusercontent.com/78889572/183802213-d2130232-82c8-477d-bbed-7149e18bfe95.png)
+<br>![Screenshot 2024-01-27 104455](https://github.com/Anvita0305/Portfolio/assets/78889572/cfe397f8-e4da-4e80-8f29-b208385b91fa)
 <br>
 
 
